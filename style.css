@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&display=swap');
+
+:root  {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    box-shadow: -1px 5px 15px -5px #000000;
+}
+
+header {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #00182e;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    color:#fffdeb;
+}
+
+#nome{
+    height: 120px;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    left:10px;
+}
+
+#logo-branco{
+    height:150px;
+    width: auto;
+    position: absolute;
+    top: 0px;
+    right:10px;
+}
+
+body {
+background: linear-gradient(#d4d6d4, #fffdeb);
+height:2500px;
+width: 100%;
+}
+
+.botao-wa {
+    z-index: 1;
+    position: fixed;
+    bottom: 50px;
+    right:3%;
+    width: 80px;
+    height: auto;
+    
+}
+
+
+
+.menu{
+    width:100%;
+    position: absolute;
+    top:150px;
+    color: #00182e;
+    font-size: large;
+    }
+
+.navegação {
+    text-decoration: none;
+    
+}
+
+.navegação:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.PM {
+    position: absolute;
+    top:10px;
+    left:60%;
+}
+
+.BL {
+    position: absolute;
+    top:10px;
+    left:80%;
+}
+
+main{
+    background: linear-gradient(#d4d6d4, #ffffff);
+    width:100%;
+    position:absolute;
+    top:150px;
+    left:0;
+}
+
+.apresentação {
+    width: 100%;
+}
+
+h1{
+    font-size: 62px;
+    width:36%;
+    position: absolute;
+    left:8%;
+    top: 100px;
+    color: #222831;
+    font-style: italic;
+    
+}
+
+#aérea {
+    width: 50%;
+    height:auto;
+    position:absolute;
+    right:20px;
+    top: 40px; 
+}
+
+.pronto-para-morar {
+    position: absolute;
+    top: 530px;
+    width: 100%;
+}
+
+.UU {
+    font-size: large;
+    background-color: #ff7500;
+    width: 10%;
+    padding: 5px;
+    text-align: center;
+    transform: rotate(-30deg);
+    position:absolute;
+    left:120px;
+    top:10px;
+    box-shadow: -1px 5px 15px -5px #000000;
+}
+
+.box-titulo{
+    width: 80%;
+    height: 40px;
+    background-color: #0c6ba1;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fffdeb;
+    margin-left: 10%;
+    box-shadow: -1px 5px 15px -5px #000000;
+}
+
+.nome-residencial {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.stela{    
+position: absolute;
+left:50%;
+transform:translate(-50%);
+top:15px;
+}
+
+.video{
+    width: 50%;
+    height: 400px;
+    position:absolute;
+    left: 100px;
+    top: 130px;
+    padding: 30px;
+}
+
+.descrição {
+    font-size: large;
+    list-style-type: none;
+    padding:70px; 
+    width: 40%;
+}
+
+.dstela{
+    position:absolute;
+    left:60%;
+    line-height: 40px;
+}
+
+.valor-stela{
+    font-size: xx-large;
+    padding:70px; 
+    width: 40%;
+    position:absolute;
+    left:65%;
+    top: 400px;
+}
+
+.FL {
+    z-index: 1;
+    font-size: large;
+    background-color: #ff7500;
+    width: 10%;
+    padding: 5px;
+    text-align: center;
+    transform: rotate(-30deg);
+    position:absolute;
+    left:120px;
+    top:1150px;
+    box-shadow: -1px 5px 15px -5px #000000;
+}
+
+.bana-paula {
+    position: absolute;
+    top:1150px;
+    text-align: center;
+}
+
+.ana-paula{
+    position: absolute;
+    top:10px;
+    left:50%;
+    transform: translate(-50%);
+
+}
+
+.dana-paula{    
+    position: absolute;
+    left:150px;
+    top: 1230px;
+    line-height: 40px;
+    padding: 70px;
+    }
+
+.valor-anapaula {
+    padding:60px;
+    width: 200px;
+    text-align: center;
+}
+
+.mapa{
+    position: absolute;
+    left:80%;
+    top:10px;
+    padding-top: 50px;
+}
+
+.contato {
+    width: 100%;
+    position: absolute;
+    top:50px;
+}
+
+.logo {
+    width: 40%;
+    margin-left: 200px;
+    position: absolute;
+    top:1850px;
+}
+
+.icon-mail {
+    width: auto;
+    position: absolute;
+    top: 2025px;
+    left:50%
+}
+
+.contato-mail {
+    position: absolute;
+    top: 2025px;
+    left:55%
+}
+
+.icon-whats {
+    width: auto;
+    position: absolute;
+    top: 2075px;
+    left:50%
+}
+
+.contato-whats {
+    position: absolute;
+    top: 2075px;
+    left:55%
+}
+
+
+
+footer {
+    background-color: #00182e;
+    height:50px;
+    width: 100%;
+    position: absolute;
+    top: 2500px;
+    left: 0;
+
+}
+
+.rodape {
+    color: #d4d6d4;
+    text-align: center;
+}
