@@ -1,95 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
   <title>Cadu Construções</title>
 </head>
 
 <body>
   <header>
-    <img id= "nome" src="nome branco fundo azul.png" alt="Cadu Contruções">
-    <img id="logo-branco" src="logo branco fundo azul.png" alt="Logo da construtora, rascunho de uma casa">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <img id="logo-branco" src="media\logo_branco_fundo_azul-removebg-preview.png"
+            alt="Logo da construtora, rascunho de uma casa">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="navegação PM" href="#pronto-para-morar">Pronto para morar</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="navegação BL"href="">Breve lançamento</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="navegação EA" href="#vendidos">Vendidos</a>
+            </li>
+        </div>
+      </div>
+    </nav>
   </header>
 
-<a class="botao-wa" href="https://api.whatsapp.com/send?phone=5511987772151"><img class="botao-wa" src="whats icon color.png" alt="icone whatsapp"></a>
 
-<nav class="menu">
-    <a class="navegação PM" href="">Pronto para morar</a>
-    <a class="navegação BL"href="">Breve lançamento</a>
-</nav>
 
   <main>
-    <div class="apresentação"> 
-      <h1> Venha realizar o sonho de morar na praia! </h1>
-      <img id="aérea" src="praia.jpg" alt="imagem aérea da Praia Grande/SP">
-   </div>
+    <div class="div-texto-capa">
+      <h1 id="texto-capa"> Realize o sonho de morar na praia! </h1>
+    </div>
+    <div id="gradiente">
 
-    <div class="pronto-para-morar">
+    </div>
+    <div id="pronto-para-morar">
 
-<p class="tag UU">Última unidade</p>
-    
-<div class="box-titulo"> <p class="nome-residencial stela">Residencial Stela</p> </div>
+      <div class="box-titulo ana-paula">
+        <h1 class="display-4">Residencial Ana Paula</h1>
+      </div>
+      <div class="box-descricao">
+        <img id="img-fachada" height="660" width="415" src="media\fachada.jpeg">
+        <dl class="row dl-row">
+          <dt class="col-sm-4">Condomínio</dt>
+          <dd class="col-sm-8">5 sobrados</dd>
 
-<iframe class="video" src="https://www.youtube.com/embed/ep5SImGo2aY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <dt class="col-sm-4">Próximo a praia</dt>
+          <dd class="col-sm-8">A apenas 350m da orla da praia.</dd>
 
+          <dt class="col-sm-4">Casas espaçosas</dt>
+          <dd class="col-sm-8">com 2 e 3 dorms</dd>
 
-<ul class="descrição dstela">
-<li>Condomínio com 5 sobrados;</li>
-<li>Apenas 250m da orla da praia;</li>
-<li>Unidade disponível:</li>
-<ul>
-  <li>2 dorms</li>
-  <li>2 banheiros</li>
-  <li>1 vaga de garagem</li>
-  <li>61m² de área útil</li>
-</ul>
-</ul>
+          <dt class="col-sm-4">Unidades únicas</dt>
+          <dd class="col-sm-8">com varanda e área externa ampliada.</dd>
 
-<p class="valor-stela">R$240 000</p>
-
-
+          <dt class="col-sm-4">Confira a localização</dt>
+          <dd class="col-sm-8">
+            <a href="#mapa" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-geo-alt"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+            </a>
+          </dd>
+        </dl>
       </div>
 
-<div class="breve-lancamento">
+      <div class="box-cards">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Casa 01</h5>
+                <p class="card-text">3 dorms (1 suite) com varanda.</p>
+                <p class="card-text">R$ 310 000,00*</p>
+                <p class="card-text letra-menor">Valor atribuído em Engenharia CAIXA:</p>
+                <p class="card-text letra-menor">R$ 336 000</p>
+                <a href="#casa01" role="button" class="btn btn-primary">Fotos e vídeo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Casa 02, 03, 04</h5>
+                <p class="card-text">2 dorms.</p>
+                <p class="card-text">R$ 270 000,00*</p>
+                <p class="card-text letra-menor">Valor atribuído em Engenharia CAIXA:</p>
+                <p class="card-text letra-menor"> Casa 02 - R$ 300 000</p>
+                <p class="card-text letra-menor"> Casa 03 - R$ 258 000</p>
+                <p class="card-text letra-menor"> Casa 04 - R$ 290 000</p>
+                <a href="#casaPadrao" class="btn btn-primary">Fotos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Casa 05</h5>
+                <p class="card-text">2 dorms com área externa ampliada.</p>
+                <p class="card-text"> </p>
+                <a href="" class="btn btn-secondary btn-vendida">VENDIDA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="box-casa01">
+        <h1 id="casa01" class="display-6">Casa 01</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+              aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+              aria-label="Slide 11"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+              aria-label="Slide 12"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img width="660" height="415" src="media\casa01\varanda.jpeg" class="d-block w-100 img-tam-padrao"
+                alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Varanda</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\sala.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Sala integrada com varanda e cozinha americana</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\sala cozinha americana.jpeg" class="d-block w-100"
+                alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Sala ampla com cozinha americana</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\cozinha.jpeg" class="d-block w-100 img-tam-padrao"
+                alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Cozinha</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\cozinha gabinete.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Cozinha equipada com gabinete planejado</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\lavanderia.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Área de serviço</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\suite.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Suite</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\banho suite.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Banheiro da suite</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\quarto01.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Quarto 01</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\quarto02.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Quarto 02</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casa01\banheiro.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Banheiro</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-  <p class="tag FL">Breve lançamento</p>
 
-  <div class="box-titulo bana-paula"> <p class="nome-residencial ana-paula">Residencial Ana Paula</p> </div>
+        <div class="video-casa01">
+          <h1 class="display-6">Tour virtual</h1>
+          <iframe width="660" height="415" src="https://www.youtube.com/embed/7HCvXJ7rVj0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
 
-  <ul class="descrição dana-paula">
-    <li>Condomínio com 5 sobrados;</li>
-    <li>Apenas 350m da orla da praia;</li>
-    <li>2 e 3 dorms;</li>
-    <li>Unidades únicas com quintal e varanda;</li>
-    <li>Entrega prevista: Julho/2022</li>
-     
-    <p class="valor-anapaula"> Condições especiais para reservas durante o período de obra</p>
+      <div class="box-casaPadrao">
+        <h1 id="casaPadrao" class="display-6">Casa 02, 03 e 04</h1>
+        <div id="carouselcasaPadrao" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img width="660" height="415" src="media\casaPadrao\sala1.jpeg" class="d-block w-100 img-tam-padrao"
+                alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Sala</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casaPadrao\sala2.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Sala</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casaPadrao\cozinha.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Cozinha com gabinete planejado</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casaPadrao\lavabo.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Lavabo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casaPadrao\ae externa.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Área de serviço</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casaPadrao\quarto01.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Quarto 01</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casaPadrao\quarto02.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Quarto 02</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img width="660" height="415" src="media\casaPadrao\banheiro.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Banheiro completo</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselcasaPadrao" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
 
-    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.7301871191585!2d-46.51141498501307!3d-24.040577984447197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1f83a904c169%3A0x863bbf6b6450b442!2sAv.%20%C3%82ngelo%20Perino%2C%20370%20-%20Maracan%C3%A3%2C%20Praia%20Grande%20-%20SP%2C%2011705-580!5e0!3m2!1spt-BR!2sbr!4v1649444909869!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="box-localizacao" id="mapa">
+        <h1 class="display-6">Localização</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.6851108179744!2d-46.50681170000001!3d-24.042166899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1f84adbb6519%3A0x7f5eae0b93b02811!2sAv.%20%C3%82ngelo%20Perino%2C%2070%20-%20Maracan%C3%A3%2C%20Praia%20Grande%20-%20SP%2C%2011705-580!5e0!3m2!1spt-BR!2sbr!4v1671030935623!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
 
-</div>
+    <div class="gradiente2">
 
-<div class="contato">
+    </div>
 
-<img class="logo" src="logo.png" alt="logo">
-<img class="icon-mail" src="mail icon.png" alt="icone email">
-<p class="contato-mail">construtoracadu@gmail.com</p>
-<img class="icon-whats" src="whats icon.png" alt="icone whatsapp">
-<p class="contato-whats">(11)99602-6079 / (11)98777-2151</p>
-
-
-</div>
-
-</main>
+    <div class="video-vendidos box-vendidos" id="vendidos">
+      <h1 class="display-6">Residencial Stella</h1>
+      <iframe width="600" height="450" src="https://www.youtube.com/embed/4NbQNfzjxXI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <hr>
 
 
-<footer>
-<p class="rodape">© 2016 CADU Construções. Todos os Direitos Reservados.</p>
 
-</footer>
+    <!-- <div class="breve-lancamento">
+      
+      <p class="tag FL">Breve lançamento</p>
+      
+      <div class="box-titulo bana-paula"> <p class="nome-residencial ana-paula">Residencial Ana Paula</p> </div>
+      
+      <ul class="descrição ana-paula">
+        <li>Condomínio com 5 sobrados;</li>
+        <li>Apenas 350m da orla da praia;</li>
+        <li>2 e 3 dorms;</li>
+        <li>Unidades únicas com quintal e varanda;</li>
+        <li>Entrega prevista: Julho/2022</li>
+        
+        <p class="valor-anapaula"> Condições especiais para reservas durante o período de obra</p>-->
+
+
+    <div class="contato">
+
+      <img class="logo" src="media\logo.png" alt="logo">
+      <!-- <img class="icon-mail" src="mail icon.png" alt="icone email">
+          <p class="contato-mail">construtoracadu@gmail.com</p>
+          <img class="icon-whats" src="whats icon.png" alt="icone whatsapp">
+<p class="contato-whats">(11)99602-6079 / (11)98777-2151</p> -->
+
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    <p class="rodape letra-menor">*valores sujeitos a alterações sem aviso prévio.</p>
+    <p class="rodape">© 2016 CADU Construções. Todos os Direitos Reservados.</p>
+
+  </footer>
 
 </body>
+
 </html>

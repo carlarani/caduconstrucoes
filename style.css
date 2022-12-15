@@ -1,291 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&display=swap');
+@import url(media\Montserrat-Light.ttf);
 
-:root  {
+@media (max-width: 768px) {
+    .logo {
+        width: 70%;
+    }
+}
+
+
+:root {
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-    box-shadow: -1px 5px 15px -5px #000000;
-}
-
-header {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #00182e;
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    top:0;
-    right:0;
-    color:#fffdeb;
-}
-
-#nome{
-    height: 120px;
-    width: auto;
-    position: absolute;
-    top: 20px;
-    left:10px;
-}
-
-#logo-branco{
-    height:150px;
-    width: auto;
-    position: absolute;
-    top: 0px;
-    right:10px;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 body {
-background: linear-gradient(#d4d6d4, #fffdeb);
-height:2500px;
-width: 100%;
+    background-image: url(praia.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-.botao-wa {
-    z-index: 1;
-    position: fixed;
-    bottom: 50px;
-    right:3%;
-    width: 80px;
-    height: auto;
-    
+header {
+    padding: 2rem;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vw;
+    width: 100%;
 }
 
+#logo-branco {
+    width: 8rem;
+}
 
+.navbar {
+    width: 100%;
+}
 
-.menu{
-    width:100%;
-    position: absolute;
-    top:150px;
-    color: #00182e;
-    font-size: large;
-    }
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
 
 .navegação {
     text-decoration: none;
-    
+    color: #ffffff;
+    margin: 1vw;
+    font-size: 1.5rem;
 }
 
-.navegação:hover {
-    transform: scale(1.2);
+a,
+a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
     font-weight: bold;
 }
 
-.PM {
-    position: absolute;
-    top:10px;
-    left:60%;
+.btn-vendida:hover {
+    font-weight: normal;
+    box-shadow: none;
 }
 
-.BL {
-    position: absolute;
-    top:10px;
-    left:80%;
-}
-
-main{
-    background: linear-gradient(#d4d6d4, #ffffff);
-    width:100%;
-    position:absolute;
-    top:150px;
-    left:0;
-}
-
-.apresentação {
+.div-texto-capa {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15vw;
 }
 
-h1{
-    font-size: 62px;
-    width:36%;
-    position: absolute;
-    left:8%;
-    top: 100px;
-    color: #222831;
+#texto-capa {
     font-style: italic;
-    
+    width: 40%;
+    color: #ffffff;
+    margin: 0vw 5vw;
+    padding-top: 6vw;
 }
 
-#aérea {
-    width: 50%;
-    height:auto;
-    position:absolute;
-    right:20px;
-    top: 40px; 
+#gradiente {
+    width: 100%;
+    height: 30vw;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #00182e 61.38%);
 }
 
-.pronto-para-morar {
-    position: absolute;
-    top: 530px;
+#pronto-para-morar,
+.row,
+.rodape,
+.box-casa01 {
+    background-color: #00182e;
+    color: #ffffff;
+}
+
+.card {
+    color: #00182e;
+}
+
+#pronto-para-morar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ana-paula {
     width: 100%;
 }
 
-.UU {
-    font-size: large;
-    background-color: #ff7500;
-    width: 10%;
-    padding: 5px;
-    text-align: center;
-    transform: rotate(-30deg);
-    position:absolute;
-    left:120px;
-    top:10px;
-    box-shadow: -1px 5px 15px -5px #000000;
+#img-fachada {
+    float: right;
 }
 
-.box-titulo{
-    width: 80%;
-    height: 40px;
-    background-color: #0c6ba1;
-    border-radius: 20px;
-    padding: 30px;
-    color: #fffdeb;
-    margin-left: 10%;
-    box-shadow: -1px 5px 15px -5px #000000;
-}
-
-.nome-residencial {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.stela{    
-position: absolute;
-left:50%;
-transform:translate(-50%);
-top:15px;
-}
-
-.video{
-    width: 50%;
-    height: 400px;
-    position:absolute;
-    left: 100px;
-    top: 130px;
-    padding: 30px;
-}
-
-.descrição {
-    font-size: large;
-    list-style-type: none;
-    padding:70px; 
-    width: 40%;
-}
-
-.dstela{
-    position:absolute;
-    left:60%;
-    line-height: 40px;
-}
-
-.valor-stela{
-    font-size: xx-large;
-    padding:70px; 
-    width: 40%;
-    position:absolute;
-    left:65%;
-    top: 400px;
-}
-
-.FL {
-    z-index: 1;
-    font-size: large;
-    background-color: #ff7500;
-    width: 10%;
-    padding: 5px;
-    text-align: center;
-    transform: rotate(-30deg);
-    position:absolute;
-    left:120px;
-    top:1150px;
-    box-shadow: -1px 5px 15px -5px #000000;
-}
-
-.bana-paula {
-    position: absolute;
-    top:1150px;
-    text-align: center;
-}
-
-.ana-paula{
-    position: absolute;
-    top:10px;
-    left:50%;
-    transform: translate(-50%);
-
-}
-
-.dana-paula{    
-    position: absolute;
-    left:150px;
-    top: 1230px;
-    line-height: 40px;
-    padding: 70px;
-    }
-
-.valor-anapaula {
-    padding:60px;
-    width: 200px;
-    text-align: center;
-}
-
-.mapa{
-    position: absolute;
-    left:80%;
-    top:10px;
-    padding-top: 50px;
-}
-
+.box-titulo,
+.box-cards,
+.box-descricao,
 .contato {
-    width: 100%;
-    position: absolute;
-    top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 1vw;
+}
+
+.display-6,
+.video-casa01,
+.box-localizacao,
+.box-vendidos {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+.dl-row {
+    width: 60%;
+    line-height: 2rem;
+}
+
+.box-localizacao {
+    width: 60%;
+    margin-bottom: 5vw;
+}
+
+.gradiente2 {
+    background: linear-gradient(180deg, #00182e 0%, #ffffff 61%);
+    height: 15vw;
 }
 
 .logo {
-    width: 40%;
-    margin-left: 200px;
-    position: absolute;
-    top:1850px;
-}
-
-.icon-mail {
-    width: auto;
-    position: absolute;
-    top: 2025px;
-    left:50%
-}
-
-.contato-mail {
-    position: absolute;
-    top: 2025px;
-    left:55%
-}
-
-.icon-whats {
-    width: auto;
-    position: absolute;
-    top: 2075px;
-    left:50%
-}
-
-.contato-whats {
-    position: absolute;
-    top: 2075px;
-    left:55%
-}
-
-
-
-footer {
-    background-color: #00182e;
-    height:50px;
-    width: 100%;
-    position: absolute;
-    top: 2500px;
-    left: 0;
-
+    width: 30%;
+    margin-bottom: 5vw;
 }
 
 .rodape {
-    color: #d4d6d4;
+    margin: unset;
     text-align: center;
+    line-height: 1.5;
+    height: 3vw;
+}
+
+.letra-menor {
+    font-size: 0.75rem;
 }
